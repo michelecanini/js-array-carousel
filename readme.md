@@ -12,6 +12,8 @@
     2. inseriamo tutte le immagini dinamicamente servendoci dell'array fornito e un semplice ciclo for che concatena un template literal.
     3. creiamo una variabile di collegamento alle immagini con querySelector
     4. creiamo un ciclo for per lo scorrimento delle immagini
+    5. creiamo una variabile stringa vuota per lo scorrimento del contenuto immagine nel carosello
+    6. inseriamo i div html nel file js all'interno del ciclo for
 
 ## Milestone 3
     1. Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente.
