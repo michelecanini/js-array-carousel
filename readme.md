@@ -2,10 +2,10 @@
 
 ## Milestone 1
     1. Creiamo il markup statico costruendo un container.
-    2. Utiliziamo Bootstrap inserendo i link per renderlo responsive.
-    3. Inseriamo un'immagine grande al centro: avremo così la struttura base e gli stili pronti per poterci poi concentrare solamente sull'aspetto logico.
-    4. Creare dei container per i bottoni avanti ed indietro.
-    5. Centrare ed allineare i bottoni.
+    2. Inseriamo un'immagine grande al centro: avremo così la struttura base e gli stili pronti per poterci poi concentrare solamente sull'aspetto logico.
+    3. Creare dei container per i bottoni avanti ed indietro.
+    4. Centrare ed allineare i bottoni.
+    5. Inserire le altre slide per testare il funzionamento.
 
 ## Milestone 2
     1. Rimuoviamo tutto il markup statico.

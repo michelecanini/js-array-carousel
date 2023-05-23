@@ -7,13 +7,22 @@ GENERAL SETTING
     box-sizing: border-box;
 }
 
-.row_car{
-    height: 100%;
+.container{
+    width: 1200px;
+    height: 450px;
+    border: 3px solid red;
+    margin: 0 auto;
+    position: relative;
 }
 
-.col_car{
+.row_slide{
     height: 100%;
     position: relative;
+}
+
+.col_slide{
+    height: 100%;
+    
 }
 
 .image_one{
@@ -24,14 +33,19 @@ GENERAL SETTING
 
 .button_prev{
     position: absolute;
+    width: 80px;
+    text-align: center;
     top: 50%;
-    left: 0%;
     background-color: rgb(193, 22, 22);
+    transform: translate(-0%, -50%);
 }
 
 .button_next{
     position: absolute;
+    width: 80px;
+    text-align: center;
     top: 50%;
     right: 0%;
     background-color: rgb(22, 22, 193);
+    transform: translate(-0%, -50%);
 }
