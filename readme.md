@@ -2,7 +2,8 @@
 
 ## Milestone 1
     1. Creiamo il markup statico costruendo un container.
-    2. Inseriamo un'immagine grande al centro: avremo così la struttura base e gli stili pronti per poterci poi concentrare solamente sull'aspetto logico.
+    2. Utiliziamo Bootstrap inserendo i link per renderlo responsive.
+    3. Inseriamo un'immagine grande al centro: avremo così la struttura base e gli stili pronti per poterci poi concentrare solamente sull'aspetto logico.
 
 ## Milestone 2
     1. Rimuoviamo tutto il markup statico.

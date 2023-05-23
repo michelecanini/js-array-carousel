@@ -6,3 +6,15 @@ GENERAL SETTING
     padding: 0;
     box-sizing: border-box;
 }
+
+.c_style{
+    width: 1200px;
+    height: 450px;
+    border: 1px solid red;
+}
+
+.image_one{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
