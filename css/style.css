@@ -7,14 +7,31 @@ GENERAL SETTING
     box-sizing: border-box;
 }
 
-.c_style{
-    width: 1200px;
-    height: 450px;
-    border: 1px solid red;
+.row_car{
+    height: 100%;
+}
+
+.col_car{
+    height: 100%;
+    position: relative;
 }
 
 .image_one{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.button_prev{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    background-color: rgb(193, 22, 22);
+}
+
+.button_next{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    background-color: rgb(22, 22, 193);
 }
