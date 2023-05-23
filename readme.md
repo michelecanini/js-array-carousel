@@ -6,9 +6,10 @@
     3. Creare dei container per i bottoni avanti ed indietro.
     4. Centrare ed allineare i bottoni.
     5. Inserire le altre slide per testare il funzionamento.
+    
 
 ## Milestone 2
-    1. Rimuoviamo tutto il markup statico.
+    1. Rimuoviamo tutto il markup statico delle immagini.
     2. inseriamo tutte le immagini dinamicamente servendoci dell'array fornito e un semplice ciclo for che concatena un template literal.
 
 ## Milestone 3
