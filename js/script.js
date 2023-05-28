@@ -11,13 +11,14 @@ const image_slider = [
     './img/02.webp',
     './img/03.webp',
     './img/04.webp',
+    './img/05.webp',
 ]
 
 // COSTANTI DI COLLEGAMENTO ALLE CLASSI CSS NEL DOM DI RECUPERO DEL PRIMO ELEMENTO
 const row_slide = document.querySelector('.row_slide');
-const controls = document.querySelector('.controls');
+const controls = document.querySelector('.controls_content');
 
-// VARIABILI VUOTE PER CONTENERE IL CONTENUTO DELLE IMMAGINI
+// VARIABILI VUOTE PER IL CONTENUTO DELLE IMMAGINI
 let row_slide_container = "";
 let controls_container = "";
 
@@ -29,24 +30,22 @@ PARTE 2 LOGICA DEL PROGRAMMA
 */
 
 // CICLO FOR PER LO SCORRIMENTO DI TUTTI GLI ELEMENTI DELL'ARRAY (ELENCO IMMAGINI)
-for(let i=0; i<images.length; i++){
+for(let i=0; i<image_slider.length; i++){
     row_slide_container += `<div class="col_slide">
-                                <img src="./${images[i]}" alt="image_one" class="image_one">
+                                <img src="./${image_slider[i]}" alt="image_one" class="image_one">
                             </div>`
     controls_container += `<div class="control">
-                            <img src="./${images[i]}" alt="image_one" class="image_one">
+                            <img src="./${image_slider[i]}" alt="image_one" class="image_one">
                             </div>`
-
-    // INIEZIONE IN COL_SLIDE E CONTROL DELL' L'HTML CREATO
-    row_slide.innerHTML = row_slide_container;
-    controls.innerHTML = controls_container;
-
-    
 }
 
-//sliderElement.innerHTML = slider_container;
+// INIEZIONE IN COL_SLIDE E CONTROL DELL' L'HTML CREATO
+row_slide.innerHTML = row_slide_container;
+controls.innerHTML = controls_container;
 
-//let all_slide = document.getElementsByClassName('col_slide')
+// APPLICAZIONE DELLE VARIABILI CON IMMAGINE ATTIVA
+document.getElementsByClassName('col_slide')[active_slide].classList.add('active');
+document.getElementsByClassName('control')[active_slide].classList.add('active');
 
 
 /* 
