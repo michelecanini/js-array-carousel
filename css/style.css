@@ -9,14 +9,16 @@ GENERAL SETTING
 
 .container{
     width: 1200px;
-    height: 450px;
+    height: 100vh;
     border: 3px solid red;
+    display: flex;
     margin: 0 auto;
-    position: relative;
+    align-items: center;
 }
 
 .row_slide{
-    height: 100%;
+    width: 900px;
+    height: 450px;
     position: relative;
 }
 
@@ -29,29 +31,30 @@ GENERAL SETTING
     display: block;
 }
 
-.image_one{
+.col_slide img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.button_prev{
+.button_prev, .button_next{
     position: absolute;
-    width: 80px;
+    width: 35px;
+    height: 35px;
     text-align: center;
-    top: 50%;
-    background-color: white;
-    transform: translate(-0%, -50%);
-    padding: 10px ;
+    left: 50%;
+    background-color: rgb(238, 92, 92);
+    transform: translateX(-50%);
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 100;
+    margin: 5px 0;
 }
 
 .button_next{
-    position: absolute;
-    width: 80px;
-    text-align: center;
-    top: 50%;
-    right: 0%;
-    background-color: white;
-    transform: translate(-0%, -50%);
-    padding: 10px ;
+    bottom: 0;
+}
+
+.button_prev{
+    top: 0;
 }
