@@ -22,7 +22,7 @@ const controls = document.querySelector('.controls_content');
 let row_slide_container = "";
 let controls_container = "";
 
-// VARIABILE DELL'IMMAGINE ATTIVA
+// VARIABILE DELL'IMMAGINE ATTIVA (VALORE ATTIVO)
 let active_slide = 0;
 
 /* 
@@ -47,23 +47,45 @@ controls.innerHTML = controls_container;
 document.getElementsByClassName('col_slide')[active_slide].classList.add('active');
 document.getElementsByClassName('control')[active_slide].classList.add('active');
 
-
 /* 
 PARTE 3 COLLEGAMENTO AI BOTTONI PREV E NEXT
+*/
 
+//COSTANTI DEI BOTTONI PREV E NEXT
+const prevButton = document.querySelector('.button_prev');
+const nextButton = document.querySelector('.button_next');
 
-all_slide[0].classList.add('active');
-
-let prevButton = document.querySelector('.button_prev');
-let nextButton = document.querySelector('.button_next');
-
+//CLICK SUL DIV PREV
 prevButton.addEventListener('click', function() {
-    console.log("PREV");
-})
+    if(active_slide === 0){
+        active_slide = image_slider.length -1;
+    }
+    else{
+        active_slide--;
+    }
 
+    document.querySelector('.col_slide.active').classList.remove('active');
+    document.getElementsByClassName('col_slide')[active_slide].classList.add('active');
+
+    document.querySelector('.control.active').classList.remove('active');
+    document.getElementsByClassName('control')[active_slide].classList.add('active');
+});
+
+//CLICK SUL DIV NEXT
 nextButton.addEventListener('click', function() {
-    console.log("NEXT");
-}) */
+    if(active_slide === image_slider.length -1){
+        active_slide = 0;
+    }
+    else{
+        active_slide++;
+    }
+
+    document.querySelector('.col_slide.active').classList.remove('active');
+    document.getElementsByClassName('col_slide')[active_slide].classList.add('active');
+
+    document.querySelector('.control.active').classList.remove('active');
+    document.getElementsByClassName('control')[active_slide].classList.add('active');
+});
 
 
 
