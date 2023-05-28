@@ -43,12 +43,14 @@ GENERAL SETTING
     height: 35px;
     text-align: center;
     left: 50%;
-    background-color: rgb(238, 92, 92);
+    background-color: white;
     transform: translateX(-50%);
     cursor: pointer;
     border-radius: 50%;
     z-index: 100;
     margin: 5px 0;
+    text-align: center;
+    padding-top: 9px;
 }
 
 .button_next{
