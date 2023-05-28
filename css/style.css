@@ -60,3 +60,25 @@ GENERAL SETTING
 .button_prev{
     top: 0;
 }
+
+.controls{
+    height: 450px;
+    position: relative; 
+    background-color: red;
+}
+
+.control{
+    height: calc(450px / 5);
+    opacity: 0.5;
+}
+
+.control.active{
+    opacity: 1;
+    border: 2px solid #ccc;
+}
+
+.control img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
