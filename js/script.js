@@ -1,5 +1,4 @@
 "use strict";
-
 //PROBLEMA: Dato un array contenente una lista di cinque immagini, creare un carosello come nello screenshot allegato.
 
 /* 
@@ -18,33 +17,36 @@ const image_slider = [
 const row_slide = document.querySelector('.row_slide');
 const controls = document.querySelector('.controls');
 
-// VARIABILE VUOTA PER AGGIUNGERE UN CONTENUTO DEL CAROSELLO
+// VARIABILI VUOTE PER CONTENERE IL CONTENUTO DELLE IMMAGINI
 let row_slide_container = "";
 let controls_container = "";
 
+// VARIABILE DELL'IMMAGINE ATTIVA
+let active_slide = 0;
+
 /* 
-PARTE 2 UTILIZZO DEL CICLO FOR PER LO SCORRIMENTO DI TUTTI GLI ELEMENTI IN DELL'ARRAY ELENCO IMMAGINI
+PARTE 2 LOGICA DEL PROGRAMMA
 */
 
-// CICLO FOR DI SCORRIMENTO
-for(let i = 0; i < image_slider.length; i++){
+// CICLO FOR PER LO SCORRIMENTO DI TUTTI GLI ELEMENTI DELL'ARRAY (ELENCO IMMAGINI)
+for(let i=0; i<images.length; i++){
+    row_slide_container += `<div class="col_slide">
+                                <img src="./${images[i]}" alt="image_one" class="image_one">
+                            </div>`
+    controls_container += `<div class="control">
+                            <img src="./${images[i]}" alt="image_one" class="image_one">
+                            </div>`
 
-    console.log(image_slider[i]);
+    // INIEZIONE IN COL_SLIDE E CONTROL DELL' L'HTML CREATO
+    row_slide.innerHTML = row_slide_container;
+    controls.innerHTML = controls_container;
 
-    // VARIABILE DI RIFERIMENTO CURRENT IMAGE INTERNA AL CICLO
-    let current_image = image_slider[i];
-
-    // AGGIUNTA DEL CONTENITORE DIV HTML ALL'INTERNO DI CURRENT_IMAGE
-    slider_container += `
-        <div class="col_slide">
-            <img src="${current_image}" alt="image_one" class="image_one">
-        </div>
-    `
+    
 }
 
-sliderElement.innerHTML = slider_container;
+//sliderElement.innerHTML = slider_container;
 
-let all_slide = document.getElementsByClassName('col_slide')
+//let all_slide = document.getElementsByClassName('col_slide')
 
 
 /* 
