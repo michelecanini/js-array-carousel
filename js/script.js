@@ -6,19 +6,21 @@
 PARTE 1 DICHIARAZIONE DELLE VARIABILI
 */
 
-// VARIABILE ARRAY ELENCO IMMAGINI
-//let image_slider = [
-//    './img/01.webp',
-//    './img/02.webp',
-//    './img/03.webp',
-//    './img/04.webp',
-//]
+// COSTANTE ARRAY CON ELENCO DELLE IMMAGINI
+const image_slider = [
+    './img/01.webp',
+    './img/02.webp',
+    './img/03.webp',
+    './img/04.webp',
+]
 
-// VARIABILE DI COLLEGAMENTO ALLE IMMAGINI SLIDE
-let sliderElement = document.querySelector('.row_slide');
+// COSTANTI DI COLLEGAMENTO ALLE CLASSI CSS NEL DOM DI RECUPERO DEL PRIMO ELEMENTO
+const row_slide = document.querySelector('.row_slide');
+const controls = document.querySelector('.controls');
 
 // VARIABILE VUOTA PER AGGIUNGERE UN CONTENUTO DEL CAROSELLO
-let slider_container = "";
+let row_slide_container = "";
+let controls_container = "";
 
 /* 
 PARTE 2 UTILIZZO DEL CICLO FOR PER LO SCORRIMENTO DI TUTTI GLI ELEMENTI IN DELL'ARRAY ELENCO IMMAGINI

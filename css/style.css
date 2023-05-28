@@ -8,7 +8,7 @@ GENERAL SETTING
 }
 
 .container{
-    width: 1200px;
+    width: 1000px;
     height: 100vh;
     border: 3px solid red;
     display: flex;
@@ -17,7 +17,7 @@ GENERAL SETTING
 }
 
 .row_slide{
-    width: 900px;
+    width: 800px;
     height: 450px;
     position: relative;
 }
